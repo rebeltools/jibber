@@ -1,0 +1,6 @@
+framework module Jibber {
+    umbrella header "JibberClient.h"
+    
+    export *
+    module * { export * }
+}

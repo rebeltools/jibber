@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9EEC73A31A7B753500504884 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9EEC73A41A7B753500504884 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				9EEC73A91A7B757600504884 /* Build Framework */,
+			);
+			dependencies = (
+				9EEC73A81A7B754800504884 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Jibber;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3107B3801C53C1010031463D /* libc++.1.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 3107B37F1C53C1010031463D /* libc++.1.dylib */; };
+		3107B3821C53C1280031463D /* libsqlite3.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 3107B3811C53C1280031463D /* libsqlite3.dylib */; };
+		3107B38E1C53C52F0031463D /* libz.1.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 3107B38D1C53C52F0031463D /* libz.1.dylib */; };
+		3107B3901C53C5970031463D /* libxml2.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 3107B38F1C53C5970031463D /* libxml2.dylib */; };
+		314CB38E1C2AEF04000E2C84 /* NSData+JibberZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 314CB38C1C2AEF04000E2C84 /* NSData+JibberZip.h */; };
+		314CB38F1C2AEF04000E2C84 /* NSData+JibberZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 314CB38D1C2AEF04000E2C84 /* NSData+JibberZip.m */; };
+		31F71ECE1B895B6A000E1A55 /* CBServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F71ECC1B895B6A000E1A55 /* CBServer.h */; };
+		31F71ECF1B895B6A000E1A55 /* CBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F71ECD1B895B6A000E1A55 /* CBServer.m */; };
+		9E30FA8B1A832CEF009DF0E7 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 9E30FA8A1A832CEF009DF0E7 /* module.modulemap */; };
+		9E4F063B1ABD4FC70039C4DF /* JibberConnectionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4F06371ABD4FC70039C4DF /* JibberConnectionProxy.h */; };
+		9E4F063C1ABD4FC70039C4DF /* JibberConnectionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F06381ABD4FC70039C4DF /* JibberConnectionProxy.m */; };
+		9E4F063D1ABD4FC70039C4DF /* JibberSessionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4F06391ABD4FC70039C4DF /* JibberSessionProxy.h */; };
+		9E4F063E1ABD4FC70039C4DF /* JibberSessionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F063A1ABD4FC70039C4DF /* JibberSessionProxy.m */; };
+		9E4F06411ABD4FD30039C4DF /* NSURLConnection+JibberClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4F063F1ABD4FD30039C4DF /* NSURLConnection+JibberClient.h */; };
+		9E4F06421ABD4FD30039C4DF /* NSURLConnection+JibberClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F06401ABD4FD30039C4DF /* NSURLConnection+JibberClient.m */; };
+		9EA691F21BE51B0C0089E3E5 /* NSData+Brotli.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691A81BE51B0C0089E3E5 /* NSData+Brotli.h */; };
+		9EA691F31BE51B0C0089E3E5 /* NSData+Brotli.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691A91BE51B0C0089E3E5 /* NSData+Brotli.mm */; };
+		9EA691F41BE51B0C0089E3E5 /* NSData+Brotli.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691A91BE51B0C0089E3E5 /* NSData+Brotli.mm */; };
+		9EA691F51BE51B0C0089E3E5 /* bit_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691AC1BE51B0C0089E3E5 /* bit_reader.c */; };
+		9EA691F61BE51B0C0089E3E5 /* bit_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691AC1BE51B0C0089E3E5 /* bit_reader.c */; };
+		9EA691F71BE51B0C0089E3E5 /* bit_reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691AD1BE51B0C0089E3E5 /* bit_reader.h */; };
+		9EA691F81BE51B0C0089E3E5 /* context.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691AE1BE51B0C0089E3E5 /* context.h */; };
+		9EA691F91BE51B0C0089E3E5 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691AF1BE51B0C0089E3E5 /* decode.c */; };
+		9EA691FA1BE51B0C0089E3E5 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691AF1BE51B0C0089E3E5 /* decode.c */; };
+		9EA691FB1BE51B0C0089E3E5 /* decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691B01BE51B0C0089E3E5 /* decode.h */; };
+		9EA691FC1BE51B0C0089E3E5 /* dictionary.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691B11BE51B0C0089E3E5 /* dictionary.c */; };
+		9EA691FD1BE51B0C0089E3E5 /* dictionary.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691B11BE51B0C0089E3E5 /* dictionary.c */; };
+		9EA691FE1BE51B0C0089E3E5 /* dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691B21BE51B0C0089E3E5 /* dictionary.h */; };
+		9EA691FF1BE51B0C0089E3E5 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691B31BE51B0C0089E3E5 /* huffman.c */; };
+		9EA692001BE51B0C0089E3E5 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691B31BE51B0C0089E3E5 /* huffman.c */; };
+		9EA692011BE51B0C0089E3E5 /* huffman.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691B41BE51B0C0089E3E5 /* huffman.h */; };
+		9EA692021BE51B0C0089E3E5 /* port.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691B51BE51B0C0089E3E5 /* port.h */; };
+		9EA692031BE51B0C0089E3E5 /* prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691B61BE51B0C0089E3E5 /* prefix.h */; };
+		9EA692041BE51B0C0089E3E5 /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691B71BE51B0C0089E3E5 /* state.c */; };
+		9EA692051BE51B0C0089E3E5 /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691B71BE51B0C0089E3E5 /* state.c */; };
+		9EA692061BE51B0C0089E3E5 /* state.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691B81BE51B0C0089E3E5 /* state.h */; };
+		9EA692071BE51B0C0089E3E5 /* streams.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691B91BE51B0C0089E3E5 /* streams.c */; };
+		9EA692081BE51B0C0089E3E5 /* streams.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691B91BE51B0C0089E3E5 /* streams.c */; };
+		9EA692091BE51B0C0089E3E5 /* streams.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691BA1BE51B0C0089E3E5 /* streams.h */; };
+		9EA6920A1BE51B0C0089E3E5 /* transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691BB1BE51B0C0089E3E5 /* transform.h */; };
+		9EA6920B1BE51B0C0089E3E5 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691BC1BE51B0C0089E3E5 /* types.h */; };
+		9EA6920C1BE51B0C0089E3E5 /* backward_references.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691BE1BE51B0C0089E3E5 /* backward_references.cc */; };
+		9EA6920D1BE51B0C0089E3E5 /* backward_references.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691BE1BE51B0C0089E3E5 /* backward_references.cc */; };
+		9EA6920E1BE51B0C0089E3E5 /* backward_references.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691BF1BE51B0C0089E3E5 /* backward_references.h */; };
+		9EA6920F1BE51B0C0089E3E5 /* bit_cost.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691C01BE51B0C0089E3E5 /* bit_cost.h */; };
+		9EA692101BE51B0C0089E3E5 /* block_splitter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691C11BE51B0C0089E3E5 /* block_splitter.cc */; };
+		9EA692111BE51B0C0089E3E5 /* block_splitter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691C11BE51B0C0089E3E5 /* block_splitter.cc */; };
+		9EA692121BE51B0C0089E3E5 /* block_splitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691C21BE51B0C0089E3E5 /* block_splitter.h */; };
+		9EA692131BE51B0C0089E3E5 /* brotli_bit_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691C31BE51B0C0089E3E5 /* brotli_bit_stream.cc */; };
+		9EA692141BE51B0C0089E3E5 /* brotli_bit_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691C31BE51B0C0089E3E5 /* brotli_bit_stream.cc */; };
+		9EA692151BE51B0C0089E3E5 /* brotli_bit_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691C41BE51B0C0089E3E5 /* brotli_bit_stream.h */; };
+		9EA692161BE51B0C0089E3E5 /* cluster.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691C51BE51B0C0089E3E5 /* cluster.h */; };
+		9EA692171BE51B0C0089E3E5 /* command.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691C61BE51B0C0089E3E5 /* command.h */; };
+		9EA692181BE51B0C0089E3E5 /* context.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691C71BE51B0C0089E3E5 /* context.h */; };
+		9EA692191BE51B0C0089E3E5 /* dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691C81BE51B0C0089E3E5 /* dictionary.h */; };
+		9EA6921A1BE51B0C0089E3E5 /* dictionary_hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691C91BE51B0C0089E3E5 /* dictionary_hash.h */; };
+		9EA6921B1BE51B0C0089E3E5 /* encode.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691CA1BE51B0C0089E3E5 /* encode.cc */; };
+		9EA6921C1BE51B0C0089E3E5 /* encode.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691CA1BE51B0C0089E3E5 /* encode.cc */; };
+		9EA6921D1BE51B0C0089E3E5 /* encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691CB1BE51B0C0089E3E5 /* encode.h */; };
+		9EA6921E1BE51B0C0089E3E5 /* encode_parallel.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691CC1BE51B0C0089E3E5 /* encode_parallel.cc */; };
+		9EA6921F1BE51B0C0089E3E5 /* encode_parallel.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691CC1BE51B0C0089E3E5 /* encode_parallel.cc */; };
+		9EA692201BE51B0C0089E3E5 /* encode_parallel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691CD1BE51B0C0089E3E5 /* encode_parallel.h */; };
+		9EA692211BE51B0C0089E3E5 /* entropy_encode.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691CE1BE51B0C0089E3E5 /* entropy_encode.cc */; };
+		9EA692221BE51B0C0089E3E5 /* entropy_encode.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691CE1BE51B0C0089E3E5 /* entropy_encode.cc */; };
+		9EA692231BE51B0C0089E3E5 /* entropy_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691CF1BE51B0C0089E3E5 /* entropy_encode.h */; };
+		9EA692241BE51B0C0089E3E5 /* fast_log.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691D01BE51B0C0089E3E5 /* fast_log.h */; };
+		9EA692251BE51B0C0089E3E5 /* find_match_length.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691D11BE51B0C0089E3E5 /* find_match_length.h */; };
+		9EA692261BE51B0C0089E3E5 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691D21BE51B0C0089E3E5 /* hash.h */; };
+		9EA692271BE51B0C0089E3E5 /* histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691D31BE51B0C0089E3E5 /* histogram.cc */; };
+		9EA692281BE51B0C0089E3E5 /* histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691D31BE51B0C0089E3E5 /* histogram.cc */; };
+		9EA692291BE51B0C0089E3E5 /* histogram.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691D41BE51B0C0089E3E5 /* histogram.h */; };
+		9EA6922A1BE51B0C0089E3E5 /* literal_cost.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691D51BE51B0C0089E3E5 /* literal_cost.cc */; };
+		9EA6922B1BE51B0C0089E3E5 /* literal_cost.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691D51BE51B0C0089E3E5 /* literal_cost.cc */; };
+		9EA6922C1BE51B0C0089E3E5 /* literal_cost.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691D61BE51B0C0089E3E5 /* literal_cost.h */; };
+		9EA6922D1BE51B0C0089E3E5 /* metablock.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691D71BE51B0C0089E3E5 /* metablock.cc */; };
+		9EA6922E1BE51B0C0089E3E5 /* metablock.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691D71BE51B0C0089E3E5 /* metablock.cc */; };
+		9EA6922F1BE51B0C0089E3E5 /* metablock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691D81BE51B0C0089E3E5 /* metablock.h */; };
+		9EA692301BE51B0C0089E3E5 /* port.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691D91BE51B0C0089E3E5 /* port.h */; };
+		9EA692311BE51B0C0089E3E5 /* prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691DA1BE51B0C0089E3E5 /* prefix.h */; };
+		9EA692321BE51B0C0089E3E5 /* ringbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691DB1BE51B0C0089E3E5 /* ringbuffer.h */; };
+		9EA692331BE51B0C0089E3E5 /* static_dict.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691DC1BE51B0C0089E3E5 /* static_dict.cc */; };
+		9EA692341BE51B0C0089E3E5 /* static_dict.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691DC1BE51B0C0089E3E5 /* static_dict.cc */; };
+		9EA692351BE51B0C0089E3E5 /* static_dict.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691DD1BE51B0C0089E3E5 /* static_dict.h */; };
+		9EA692361BE51B0C0089E3E5 /* static_dict_lut.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691DE1BE51B0C0089E3E5 /* static_dict_lut.h */; };
+		9EA692371BE51B0C0089E3E5 /* streams.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691DF1BE51B0C0089E3E5 /* streams.cc */; };
+		9EA692381BE51B0C0089E3E5 /* streams.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691DF1BE51B0C0089E3E5 /* streams.cc */; };
+		9EA692391BE51B0C0089E3E5 /* streams.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691E01BE51B0C0089E3E5 /* streams.h */; };
+		9EA6923A1BE51B0C0089E3E5 /* transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691E11BE51B0C0089E3E5 /* transform.h */; };
+		9EA6923B1BE51B0C0089E3E5 /* write_bits.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691E21BE51B0C0089E3E5 /* write_bits.h */; };
+		9EA6923C1BE51B0C0089E3E5 /* PeerTalkClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691E41BE51B0C0089E3E5 /* PeerTalkClient.h */; };
+		9EA6923D1BE51B0C0089E3E5 /* PeerTalkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691E51BE51B0C0089E3E5 /* PeerTalkClient.m */; };
+		9EA6923E1BE51B0C0089E3E5 /* PeerTalkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691E51BE51B0C0089E3E5 /* PeerTalkClient.m */; };
+		9EA6923F1BE51B0C0089E3E5 /* PeerTalkHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691E61BE51B0C0089E3E5 /* PeerTalkHelpers.h */; };
+		9EA692401BE51B0C0089E3E5 /* PeerTalkHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691E71BE51B0C0089E3E5 /* PeerTalkHelpers.m */; };
+		9EA692411BE51B0C0089E3E5 /* PeerTalkHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691E71BE51B0C0089E3E5 /* PeerTalkHelpers.m */; };
+		9EA692421BE51B0C0089E3E5 /* PeerTalkServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691E81BE51B0C0089E3E5 /* PeerTalkServer.h */; };
+		9EA692431BE51B0C0089E3E5 /* PeerTalkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691E91BE51B0C0089E3E5 /* PeerTalkServer.m */; };
+		9EA692441BE51B0C0089E3E5 /* PeerTalkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691E91BE51B0C0089E3E5 /* PeerTalkServer.m */; };
+		9EA692451BE51B0C0089E3E5 /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691EB1BE51B0C0089E3E5 /* PTChannel.h */; };
+		9EA692461BE51B0C0089E3E5 /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691EC1BE51B0C0089E3E5 /* PTChannel.m */; };
+		9EA692471BE51B0C0089E3E5 /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691EC1BE51B0C0089E3E5 /* PTChannel.m */; };
+		9EA692481BE51B0C0089E3E5 /* PTPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691ED1BE51B0C0089E3E5 /* PTPrivate.h */; };
+		9EA692491BE51B0C0089E3E5 /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691EE1BE51B0C0089E3E5 /* PTProtocol.h */; };
+		9EA6924A1BE51B0C0089E3E5 /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691EF1BE51B0C0089E3E5 /* PTProtocol.m */; };
+		9EA6924B1BE51B0C0089E3E5 /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691EF1BE51B0C0089E3E5 /* PTProtocol.m */; };
+		9EA6924C1BE51B0C0089E3E5 /* PTUSBHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EA691F01BE51B0C0089E3E5 /* PTUSBHub.h */; };
+		9EA6924D1BE51B0C0089E3E5 /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691F11BE51B0C0089E3E5 /* PTUSBHub.m */; };
+		9EA6924E1BE51B0C0089E3E5 /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA691F11BE51B0C0089E3E5 /* PTUSBHub.m */; };
+		9EEC73941A7B72F200504884 /* JibberClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC738A1A7B72F200504884 /* JibberClient.m */; };
+		9EEC73971A7B72F200504884 /* NSURLSession+JibberClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC73911A7B72F200504884 /* NSURLSession+JibberClient.m */; };
+		9EEC73981A7B72F200504884 /* NSURLSessionTask+JibberClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC73931A7B72F200504884 /* NSURLSessionTask+JibberClient.m */; };
+		9EEC739C1A7B73B400504884 /* JibberClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EEC73891A7B72F200504884 /* JibberClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EEC739D1A7B73C300504884 /* JibberClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EEC738B1A7B72F200504884 /* JibberClient+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9EEC739F1A7B73C300504884 /* JibberUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EEC738E1A7B72F200504884 /* JibberUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9EEC73A01A7B73C300504884 /* NSURLSession+JibberClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EEC73901A7B72F200504884 /* NSURLSession+JibberClient.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9EEC73A11A7B73C300504884 /* NSURLSessionTask+JibberClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EEC73921A7B72F200504884 /* NSURLSessionTask+JibberClient.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9EF6B0401A7A8CE000A41664 /* libJibber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF6B0341A7A8CE000A41664 /* libJibber.a */; };
+		9EF89F441AB9D0AB004ECEC8 /* JibberAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF89F421AB9D0AB004ECEC8 /* JibberAppDelegate.h */; };
+		9EF89F451AB9D0AB004ECEC8 /* JibberAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF89F431AB9D0AB004ECEC8 /* JibberAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EEC73A71A7B754800504884 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EF6B02C1A7A8CE000A41664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EF6B0331A7A8CE000A41664;
+			remoteInfo = JibberFramework;
+		};
+		9EF6B0411A7A8CE000A41664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EF6B02C1A7A8CE000A41664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EF6B0331A7A8CE000A41664;
+			remoteInfo = JibberFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9EF6B0321A7A8CE000A41664 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3107B37F1C53C1010031463D /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libc++.1.dylib"; sourceTree = "<group>"; };
+		3107B3811C53C1280031463D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3.dylib; sourceTree = "<group>"; };
+		3107B38D1C53C52F0031463D /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.dylib; sourceTree = "<group>"; };
+		3107B38F1C53C5970031463D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libxml2.dylib; sourceTree = "<group>"; };
+		314CB38C1C2AEF04000E2C84 /* NSData+JibberZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JibberZip.h"; sourceTree = "<group>"; };
+		314CB38D1C2AEF04000E2C84 /* NSData+JibberZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JibberZip.m"; sourceTree = "<group>"; };
+		31F71ECC1B895B6A000E1A55 /* CBServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBServer.h; sourceTree = "<group>"; };
+		31F71ECD1B895B6A000E1A55 /* CBServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBServer.m; sourceTree = "<group>"; };
+		9E30FA8A1A832CEF009DF0E7 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		9E4F06371ABD4FC70039C4DF /* JibberConnectionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberConnectionProxy.h; sourceTree = "<group>"; };
+		9E4F06381ABD4FC70039C4DF /* JibberConnectionProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JibberConnectionProxy.m; sourceTree = "<group>"; };
+		9E4F06391ABD4FC70039C4DF /* JibberSessionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberSessionProxy.h; sourceTree = "<group>"; };
+		9E4F063A1ABD4FC70039C4DF /* JibberSessionProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JibberSessionProxy.m; sourceTree = "<group>"; };
+		9E4F063F1ABD4FD30039C4DF /* NSURLConnection+JibberClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+JibberClient.h"; sourceTree = "<group>"; };
+		9E4F06401ABD4FD30039C4DF /* NSURLConnection+JibberClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+JibberClient.m"; sourceTree = "<group>"; };
+		9EA691A81BE51B0C0089E3E5 /* NSData+Brotli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Brotli.h"; sourceTree = "<group>"; };
+		9EA691A91BE51B0C0089E3E5 /* NSData+Brotli.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSData+Brotli.mm"; sourceTree = "<group>"; };
+		9EA691AC1BE51B0C0089E3E5 /* bit_reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bit_reader.c; sourceTree = "<group>"; };
+		9EA691AD1BE51B0C0089E3E5 /* bit_reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_reader.h; sourceTree = "<group>"; };
+		9EA691AE1BE51B0C0089E3E5 /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		9EA691AF1BE51B0C0089E3E5 /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode.c; sourceTree = "<group>"; };
+		9EA691B01BE51B0C0089E3E5 /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		9EA691B11BE51B0C0089E3E5 /* dictionary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dictionary.c; sourceTree = "<group>"; };
+		9EA691B21BE51B0C0089E3E5 /* dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		9EA691B31BE51B0C0089E3E5 /* huffman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = huffman.c; sourceTree = "<group>"; };
+		9EA691B41BE51B0C0089E3E5 /* huffman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huffman.h; sourceTree = "<group>"; };
+		9EA691B51BE51B0C0089E3E5 /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = port.h; sourceTree = "<group>"; };
+		9EA691B61BE51B0C0089E3E5 /* prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.h; sourceTree = "<group>"; };
+		9EA691B71BE51B0C0089E3E5 /* state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = state.c; sourceTree = "<group>"; };
+		9EA691B81BE51B0C0089E3E5 /* state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		9EA691B91BE51B0C0089E3E5 /* streams.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = streams.c; sourceTree = "<group>"; };
+		9EA691BA1BE51B0C0089E3E5 /* streams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streams.h; sourceTree = "<group>"; };
+		9EA691BB1BE51B0C0089E3E5 /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transform.h; sourceTree = "<group>"; };
+		9EA691BC1BE51B0C0089E3E5 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		9EA691BE1BE51B0C0089E3E5 /* backward_references.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = backward_references.cc; sourceTree = "<group>"; };
+		9EA691BF1BE51B0C0089E3E5 /* backward_references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backward_references.h; sourceTree = "<group>"; };
+		9EA691C01BE51B0C0089E3E5 /* bit_cost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_cost.h; sourceTree = "<group>"; };
+		9EA691C11BE51B0C0089E3E5 /* block_splitter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = block_splitter.cc; sourceTree = "<group>"; };
+		9EA691C21BE51B0C0089E3E5 /* block_splitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block_splitter.h; sourceTree = "<group>"; };
+		9EA691C31BE51B0C0089E3E5 /* brotli_bit_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = brotli_bit_stream.cc; sourceTree = "<group>"; };
+		9EA691C41BE51B0C0089E3E5 /* brotli_bit_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brotli_bit_stream.h; sourceTree = "<group>"; };
+		9EA691C51BE51B0C0089E3E5 /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cluster.h; sourceTree = "<group>"; };
+		9EA691C61BE51B0C0089E3E5 /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
+		9EA691C71BE51B0C0089E3E5 /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		9EA691C81BE51B0C0089E3E5 /* dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		9EA691C91BE51B0C0089E3E5 /* dictionary_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictionary_hash.h; sourceTree = "<group>"; };
+		9EA691CA1BE51B0C0089E3E5 /* encode.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encode.cc; sourceTree = "<group>"; };
+		9EA691CB1BE51B0C0089E3E5 /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		9EA691CC1BE51B0C0089E3E5 /* encode_parallel.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encode_parallel.cc; sourceTree = "<group>"; };
+		9EA691CD1BE51B0C0089E3E5 /* encode_parallel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode_parallel.h; sourceTree = "<group>"; };
+		9EA691CE1BE51B0C0089E3E5 /* entropy_encode.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = entropy_encode.cc; sourceTree = "<group>"; };
+		9EA691CF1BE51B0C0089E3E5 /* entropy_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy_encode.h; sourceTree = "<group>"; };
+		9EA691D01BE51B0C0089E3E5 /* fast_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fast_log.h; sourceTree = "<group>"; };
+		9EA691D11BE51B0C0089E3E5 /* find_match_length.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = find_match_length.h; sourceTree = "<group>"; };
+		9EA691D21BE51B0C0089E3E5 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		9EA691D31BE51B0C0089E3E5 /* histogram.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = histogram.cc; sourceTree = "<group>"; };
+		9EA691D41BE51B0C0089E3E5 /* histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histogram.h; sourceTree = "<group>"; };
+		9EA691D51BE51B0C0089E3E5 /* literal_cost.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = literal_cost.cc; sourceTree = "<group>"; };
+		9EA691D61BE51B0C0089E3E5 /* literal_cost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = literal_cost.h; sourceTree = "<group>"; };
+		9EA691D71BE51B0C0089E3E5 /* metablock.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = metablock.cc; sourceTree = "<group>"; };
+		9EA691D81BE51B0C0089E3E5 /* metablock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metablock.h; sourceTree = "<group>"; };
+		9EA691D91BE51B0C0089E3E5 /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = port.h; sourceTree = "<group>"; };
+		9EA691DA1BE51B0C0089E3E5 /* prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.h; sourceTree = "<group>"; };
+		9EA691DB1BE51B0C0089E3E5 /* ringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ringbuffer.h; sourceTree = "<group>"; };
+		9EA691DC1BE51B0C0089E3E5 /* static_dict.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = static_dict.cc; sourceTree = "<group>"; };
+		9EA691DD1BE51B0C0089E3E5 /* static_dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = static_dict.h; sourceTree = "<group>"; };
+		9EA691DE1BE51B0C0089E3E5 /* static_dict_lut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = static_dict_lut.h; sourceTree = "<group>"; };
+		9EA691DF1BE51B0C0089E3E5 /* streams.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = streams.cc; sourceTree = "<group>"; };
+		9EA691E01BE51B0C0089E3E5 /* streams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streams.h; sourceTree = "<group>"; };
+		9EA691E11BE51B0C0089E3E5 /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transform.h; sourceTree = "<group>"; };
+		9EA691E21BE51B0C0089E3E5 /* write_bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = write_bits.h; sourceTree = "<group>"; };
+		9EA691E41BE51B0C0089E3E5 /* PeerTalkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerTalkClient.h; sourceTree = "<group>"; };
+		9EA691E51BE51B0C0089E3E5 /* PeerTalkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerTalkClient.m; sourceTree = "<group>"; };
+		9EA691E61BE51B0C0089E3E5 /* PeerTalkHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerTalkHelpers.h; sourceTree = "<group>"; };
+		9EA691E71BE51B0C0089E3E5 /* PeerTalkHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerTalkHelpers.m; sourceTree = "<group>"; };
+		9EA691E81BE51B0C0089E3E5 /* PeerTalkServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerTalkServer.h; sourceTree = "<group>"; };
+		9EA691E91BE51B0C0089E3E5 /* PeerTalkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerTalkServer.m; sourceTree = "<group>"; };
+		9EA691EB1BE51B0C0089E3E5 /* PTChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTChannel.h; sourceTree = "<group>"; };
+		9EA691EC1BE51B0C0089E3E5 /* PTChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTChannel.m; sourceTree = "<group>"; };
+		9EA691ED1BE51B0C0089E3E5 /* PTPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPrivate.h; sourceTree = "<group>"; };
+		9EA691EE1BE51B0C0089E3E5 /* PTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTProtocol.h; sourceTree = "<group>"; };
+		9EA691EF1BE51B0C0089E3E5 /* PTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTProtocol.m; sourceTree = "<group>"; };
+		9EA691F01BE51B0C0089E3E5 /* PTUSBHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUSBHub.h; sourceTree = "<group>"; };
+		9EA691F11BE51B0C0089E3E5 /* PTUSBHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUSBHub.m; sourceTree = "<group>"; };
+		9EEC73891A7B72F200504884 /* JibberClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberClient.h; sourceTree = "<group>"; };
+		9EEC738A1A7B72F200504884 /* JibberClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JibberClient.m; sourceTree = "<group>"; };
+		9EEC738B1A7B72F200504884 /* JibberClient+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JibberClient+Private.h"; sourceTree = "<group>"; };
+		9EEC738E1A7B72F200504884 /* JibberUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberUtils.h; sourceTree = "<group>"; };
+		9EEC73901A7B72F200504884 /* NSURLSession+JibberClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+JibberClient.h"; sourceTree = "<group>"; };
+		9EEC73911A7B72F200504884 /* NSURLSession+JibberClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+JibberClient.m"; sourceTree = "<group>"; };
+		9EEC73921A7B72F200504884 /* NSURLSessionTask+JibberClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionTask+JibberClient.h"; sourceTree = "<group>"; };
+		9EEC73931A7B72F200504884 /* NSURLSessionTask+JibberClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionTask+JibberClient.m"; sourceTree = "<group>"; };
+		9EF6B0341A7A8CE000A41664 /* libJibber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJibber.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF6B03F1A7A8CE000A41664 /* JibberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JibberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF6B0451A7A8CE000A41664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF89F421AB9D0AB004ECEC8 /* JibberAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberAppDelegate.h; sourceTree = "<group>"; };
+		9EF89F431AB9D0AB004ECEC8 /* JibberAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JibberAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EF6B0311A7A8CE000A41664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF6B03C1A7A8CE000A41664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF6B0401A7A8CE000A41664 /* libJibber.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EA691A71BE51B0C0089E3E5 /* Brotli */ = {
+			isa = PBXGroup;
+			children = (
+				9EA691A81BE51B0C0089E3E5 /* NSData+Brotli.h */,
+				9EA691A91BE51B0C0089E3E5 /* NSData+Brotli.mm */,
+				9EA691AA1BE51B0C0089E3E5 /* source */,
+			);
+			path = Brotli;
+			sourceTree = "<group>";
+		};
+		9EA691AA1BE51B0C0089E3E5 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				9EA691AB1BE51B0C0089E3E5 /* dec */,
+				9EA691BD1BE51B0C0089E3E5 /* enc */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		9EA691AB1BE51B0C0089E3E5 /* dec */ = {
+			isa = PBXGroup;
+			children = (
+				9EA691AC1BE51B0C0089E3E5 /* bit_reader.c */,
+				9EA691AD1BE51B0C0089E3E5 /* bit_reader.h */,
+				9EA691AE1BE51B0C0089E3E5 /* context.h */,
+				9EA691AF1BE51B0C0089E3E5 /* decode.c */,
+				9EA691B01BE51B0C0089E3E5 /* decode.h */,
+				9EA691B11BE51B0C0089E3E5 /* dictionary.c */,
+				9EA691B21BE51B0C0089E3E5 /* dictionary.h */,
+				9EA691B31BE51B0C0089E3E5 /* huffman.c */,
+				9EA691B41BE51B0C0089E3E5 /* huffman.h */,
+				9EA691B51BE51B0C0089E3E5 /* port.h */,
+				9EA691B61BE51B0C0089E3E5 /* prefix.h */,
+				9EA691B71BE51B0C0089E3E5 /* state.c */,
+				9EA691B81BE51B0C0089E3E5 /* state.h */,
+				9EA691B91BE51B0C0089E3E5 /* streams.c */,
+				9EA691BA1BE51B0C0089E3E5 /* streams.h */,
+				9EA691BB1BE51B0C0089E3E5 /* transform.h */,
+				9EA691BC1BE51B0C0089E3E5 /* types.h */,
+			);
+			path = dec;
+			sourceTree = "<group>";
+		};
+		9EA691BD1BE51B0C0089E3E5 /* enc */ = {
+			isa = PBXGroup;
+			children = (
+				9EA691BE1BE51B0C0089E3E5 /* backward_references.cc */,
+				9EA691BF1BE51B0C0089E3E5 /* backward_references.h */,
+				9EA691C01BE51B0C0089E3E5 /* bit_cost.h */,
+				9EA691C11BE51B0C0089E3E5 /* block_splitter.cc */,
+				9EA691C21BE51B0C0089E3E5 /* block_splitter.h */,
+				9EA691C31BE51B0C0089E3E5 /* brotli_bit_stream.cc */,
+				9EA691C41BE51B0C0089E3E5 /* brotli_bit_stream.h */,
+				9EA691C51BE51B0C0089E3E5 /* cluster.h */,
+				9EA691C61BE51B0C0089E3E5 /* command.h */,
+				9EA691C71BE51B0C0089E3E5 /* context.h */,
+				9EA691C81BE51B0C0089E3E5 /* dictionary.h */,
+				9EA691C91BE51B0C0089E3E5 /* dictionary_hash.h */,
+				9EA691CA1BE51B0C0089E3E5 /* encode.cc */,
+				9EA691CB1BE51B0C0089E3E5 /* encode.h */,
+				9EA691CC1BE51B0C0089E3E5 /* encode_parallel.cc */,
+				9EA691CD1BE51B0C0089E3E5 /* encode_parallel.h */,
+				9EA691CE1BE51B0C0089E3E5 /* entropy_encode.cc */,
+				9EA691CF1BE51B0C0089E3E5 /* entropy_encode.h */,
+				9EA691D01BE51B0C0089E3E5 /* fast_log.h */,
+				9EA691D11BE51B0C0089E3E5 /* find_match_length.h */,
+				9EA691D21BE51B0C0089E3E5 /* hash.h */,
+				9EA691D31BE51B0C0089E3E5 /* histogram.cc */,
+				9EA691D41BE51B0C0089E3E5 /* histogram.h */,
+				9EA691D51BE51B0C0089E3E5 /* literal_cost.cc */,
+				9EA691D61BE51B0C0089E3E5 /* literal_cost.h */,
+				9EA691D71BE51B0C0089E3E5 /* metablock.cc */,
+				9EA691D81BE51B0C0089E3E5 /* metablock.h */,
+				9EA691D91BE51B0C0089E3E5 /* port.h */,
+				9EA691DA1BE51B0C0089E3E5 /* prefix.h */,
+				9EA691DB1BE51B0C0089E3E5 /* ringbuffer.h */,
+				9EA691DC1BE51B0C0089E3E5 /* static_dict.cc */,
+				9EA691DD1BE51B0C0089E3E5 /* static_dict.h */,
+				9EA691DE1BE51B0C0089E3E5 /* static_dict_lut.h */,
+				9EA691DF1BE51B0C0089E3E5 /* streams.cc */,
+				9EA691E01BE51B0C0089E3E5 /* streams.h */,
+				9EA691E11BE51B0C0089E3E5 /* transform.h */,
+				9EA691E21BE51B0C0089E3E5 /* write_bits.h */,
+			);
+			path = enc;
+			sourceTree = "<group>";
+		};
+		9EA691E31BE51B0C0089E3E5 /* PeerTalk */ = {
+			isa = PBXGroup;
+			children = (
+				9EA691E41BE51B0C0089E3E5 /* PeerTalkClient.h */,
+				9EA691E51BE51B0C0089E3E5 /* PeerTalkClient.m */,
+				9EA691E61BE51B0C0089E3E5 /* PeerTalkHelpers.h */,
+				9EA691E71BE51B0C0089E3E5 /* PeerTalkHelpers.m */,
+				9EA691E81BE51B0C0089E3E5 /* PeerTalkServer.h */,
+				9EA691E91BE51B0C0089E3E5 /* PeerTalkServer.m */,
+				9EA691EA1BE51B0C0089E3E5 /* source */,
+			);
+			path = PeerTalk;
+			sourceTree = "<group>";
+		};
+		9EA691EA1BE51B0C0089E3E5 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				9EA691EB1BE51B0C0089E3E5 /* PTChannel.h */,
+				9EA691EC1BE51B0C0089E3E5 /* PTChannel.m */,
+				9EA691ED1BE51B0C0089E3E5 /* PTPrivate.h */,
+				9EA691EE1BE51B0C0089E3E5 /* PTProtocol.h */,
+				9EA691EF1BE51B0C0089E3E5 /* PTProtocol.m */,
+				9EA691F01BE51B0C0089E3E5 /* PTUSBHub.h */,
+				9EA691F11BE51B0C0089E3E5 /* PTUSBHub.m */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		9EBB243E1A7E1F43005E4245 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				9E30FA8A1A832CEF009DF0E7 /* module.modulemap */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		9EF6B02B1A7A8CE000A41664 = {
+			isa = PBXGroup;
+			children = (
+				3107B38F1C53C5970031463D /* libxml2.dylib */,
+				3107B38D1C53C52F0031463D /* libz.1.dylib */,
+				3107B3811C53C1280031463D /* libsqlite3.dylib */,
+				3107B37F1C53C1010031463D /* libc++.1.dylib */,
+				9EBB243E1A7E1F43005E4245 /* Dependencies */,
+				9EF6B0361A7A8CE000A41664 /* JibberFramework */,
+				9EF6B0431A7A8CE000A41664 /* JibberFrameworkTests */,
+				9EF6B0351A7A8CE000A41664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EF6B0351A7A8CE000A41664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EF6B0341A7A8CE000A41664 /* libJibber.a */,
+				9EF6B03F1A7A8CE000A41664 /* JibberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EF6B0361A7A8CE000A41664 /* JibberFramework */ = {
+			isa = PBXGroup;
+			children = (
+				9EA691A71BE51B0C0089E3E5 /* Brotli */,
+				9EA691E31BE51B0C0089E3E5 /* PeerTalk */,
+				31F71ECC1B895B6A000E1A55 /* CBServer.h */,
+				31F71ECD1B895B6A000E1A55 /* CBServer.m */,
+				9EF89F421AB9D0AB004ECEC8 /* JibberAppDelegate.h */,
+				9EF89F431AB9D0AB004ECEC8 /* JibberAppDelegate.m */,
+				9EEC73891A7B72F200504884 /* JibberClient.h */,
+				9EEC738A1A7B72F200504884 /* JibberClient.m */,
+				9EEC738B1A7B72F200504884 /* JibberClient+Private.h */,
+				9E4F06371ABD4FC70039C4DF /* JibberConnectionProxy.h */,
+				9E4F06381ABD4FC70039C4DF /* JibberConnectionProxy.m */,
+				9E4F06391ABD4FC70039C4DF /* JibberSessionProxy.h */,
+				9E4F063A1ABD4FC70039C4DF /* JibberSessionProxy.m */,
+				9EEC738E1A7B72F200504884 /* JibberUtils.h */,
+				314CB38C1C2AEF04000E2C84 /* NSData+JibberZip.h */,
+				314CB38D1C2AEF04000E2C84 /* NSData+JibberZip.m */,
+				9E4F063F1ABD4FD30039C4DF /* NSURLConnection+JibberClient.h */,
+				9E4F06401ABD4FD30039C4DF /* NSURLConnection+JibberClient.m */,
+				9EEC73901A7B72F200504884 /* NSURLSession+JibberClient.h */,
+				9EEC73911A7B72F200504884 /* NSURLSession+JibberClient.m */,
+				9EEC73921A7B72F200504884 /* NSURLSessionTask+JibberClient.h */,
+				9EEC73931A7B72F200504884 /* NSURLSessionTask+JibberClient.m */,
+			);
+			name = JibberFramework;
+			path = ../framework;
+			sourceTree = "<group>";
+		};
+		9EF6B0431A7A8CE000A41664 /* JibberFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EF6B0441A7A8CE000A41664 /* Supporting Files */,
+			);
+			path = JibberFrameworkTests;
+			sourceTree = "<group>";
+		};
+		9EF6B0441A7A8CE000A41664 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EF6B0451A7A8CE000A41664 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9EEC739B1A7B73AC00504884 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA692191BE51B0C0089E3E5 /* dictionary.h in Headers */,
+				9EA692161BE51B0C0089E3E5 /* cluster.h in Headers */,
+				9EA692241BE51B0C0089E3E5 /* fast_log.h in Headers */,
+				9EA6922F1BE51B0C0089E3E5 /* metablock.h in Headers */,
+				9EA692491BE51B0C0089E3E5 /* PTProtocol.h in Headers */,
+				9EA692251BE51B0C0089E3E5 /* find_match_length.h in Headers */,
+				9EA691FE1BE51B0C0089E3E5 /* dictionary.h in Headers */,
+				314CB38E1C2AEF04000E2C84 /* NSData+JibberZip.h in Headers */,
+				9EA6922C1BE51B0C0089E3E5 /* literal_cost.h in Headers */,
+				9EA692261BE51B0C0089E3E5 /* hash.h in Headers */,
+				9EA6920E1BE51B0C0089E3E5 /* backward_references.h in Headers */,
+				9EA6920A1BE51B0C0089E3E5 /* transform.h in Headers */,
+				9EA691FB1BE51B0C0089E3E5 /* decode.h in Headers */,
+				9EA6923A1BE51B0C0089E3E5 /* transform.h in Headers */,
+				9EA692091BE51B0C0089E3E5 /* streams.h in Headers */,
+				9EEC739C1A7B73B400504884 /* JibberClient.h in Headers */,
+				9EA692021BE51B0C0089E3E5 /* port.h in Headers */,
+				9EA6920F1BE51B0C0089E3E5 /* bit_cost.h in Headers */,
+				9EA692481BE51B0C0089E3E5 /* PTPrivate.h in Headers */,
+				9EEC739D1A7B73C300504884 /* JibberClient+Private.h in Headers */,
+				9EA692011BE51B0C0089E3E5 /* huffman.h in Headers */,
+				9EA6921D1BE51B0C0089E3E5 /* encode.h in Headers */,
+				9EA692391BE51B0C0089E3E5 /* streams.h in Headers */,
+				9EA6920B1BE51B0C0089E3E5 /* types.h in Headers */,
+				9EA6923C1BE51B0C0089E3E5 /* PeerTalkClient.h in Headers */,
+				9EF89F441AB9D0AB004ECEC8 /* JibberAppDelegate.h in Headers */,
+				9EA692201BE51B0C0089E3E5 /* encode_parallel.h in Headers */,
+				9EA6923F1BE51B0C0089E3E5 /* PeerTalkHelpers.h in Headers */,
+				9EEC739F1A7B73C300504884 /* JibberUtils.h in Headers */,
+				9E4F06411ABD4FD30039C4DF /* NSURLConnection+JibberClient.h in Headers */,
+				9EA692321BE51B0C0089E3E5 /* ringbuffer.h in Headers */,
+				9EA692301BE51B0C0089E3E5 /* port.h in Headers */,
+				9E4F063B1ABD4FC70039C4DF /* JibberConnectionProxy.h in Headers */,
+				9EEC73A01A7B73C300504884 /* NSURLSession+JibberClient.h in Headers */,
+				9EA692231BE51B0C0089E3E5 /* entropy_encode.h in Headers */,
+				9EA6923B1BE51B0C0089E3E5 /* write_bits.h in Headers */,
+				9EA691F71BE51B0C0089E3E5 /* bit_reader.h in Headers */,
+				9EA692421BE51B0C0089E3E5 /* PeerTalkServer.h in Headers */,
+				9EA692171BE51B0C0089E3E5 /* command.h in Headers */,
+				9EA692351BE51B0C0089E3E5 /* static_dict.h in Headers */,
+				9EA692031BE51B0C0089E3E5 /* prefix.h in Headers */,
+				9EA692291BE51B0C0089E3E5 /* histogram.h in Headers */,
+				9EA691F81BE51B0C0089E3E5 /* context.h in Headers */,
+				9EA692181BE51B0C0089E3E5 /* context.h in Headers */,
+				9EA691F21BE51B0C0089E3E5 /* NSData+Brotli.h in Headers */,
+				9EA692061BE51B0C0089E3E5 /* state.h in Headers */,
+				9E4F063D1ABD4FC70039C4DF /* JibberSessionProxy.h in Headers */,
+				9EA692311BE51B0C0089E3E5 /* prefix.h in Headers */,
+				9EA6921A1BE51B0C0089E3E5 /* dictionary_hash.h in Headers */,
+				9EA6924C1BE51B0C0089E3E5 /* PTUSBHub.h in Headers */,
+				31F71ECE1B895B6A000E1A55 /* CBServer.h in Headers */,
+				9EA692121BE51B0C0089E3E5 /* block_splitter.h in Headers */,
+				9EA692361BE51B0C0089E3E5 /* static_dict_lut.h in Headers */,
+				9EA692151BE51B0C0089E3E5 /* brotli_bit_stream.h in Headers */,
+				9EA692451BE51B0C0089E3E5 /* PTChannel.h in Headers */,
+				9EEC73A11A7B73C300504884 /* NSURLSessionTask+JibberClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9EF6B0331A7A8CE000A41664 /* Jibber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF6B0481A7A8CE000A41664 /* Build configuration list for PBXNativeTarget "Jibber" */;
+			buildPhases = (
+				9EF6B0301A7A8CE000A41664 /* Sources */,
+				3107B37E1C53C0E80031463D /* Resources */,
+				9EF6B0311A7A8CE000A41664 /* Frameworks */,
+				9EF6B0321A7A8CE000A41664 /* CopyFiles */,
+				9EEC739B1A7B73AC00504884 /* Headers */,
+				9EEC73A21A7B749700504884 /* Prepare Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jibber;
+			productName = JibberFramework;
+			productReference = 9EF6B0341A7A8CE000A41664 /* libJibber.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9EF6B03E1A7A8CE000A41664 /* JibberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF6B04B1A7A8CE000A41664 /* Build configuration list for PBXNativeTarget "JibberTests" */;
+			buildPhases = (
+				9EF6B03B1A7A8CE000A41664 /* Sources */,
+				9EF6B03C1A7A8CE000A41664 /* Frameworks */,
+				9EF6B03D1A7A8CE000A41664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EF6B0421A7A8CE000A41664 /* PBXTargetDependency */,
+			);
+			name = JibberTests;
+			productName = JibberFrameworkTests;
+			productReference = 9EF6B03F1A7A8CE000A41664 /* JibberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EF6B02C1A7A8CE000A41664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Matthew Cheok";
+				TargetAttributes = {
+					9EEC73A31A7B753500504884 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					9EF6B0331A7A8CE000A41664 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					9EF6B03E1A7A8CE000A41664 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 9EF6B02F1A7A8CE000A41664 /* Build configuration list for PBXProject "Jibber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9EF6B02B1A7A8CE000A41664;
+			productRefGroup = 9EF6B0351A7A8CE000A41664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EF6B0331A7A8CE000A41664 /* Jibber */,
+				9EF6B03E1A7A8CE000A41664 /* JibberTests */,
+				9EEC73A31A7B753500504884 /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3107B37E1C53C0E80031463D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3107B3901C53C5970031463D /* libxml2.dylib in Resources */,
+				3107B38E1C53C52F0031463D /* libz.1.dylib in Resources */,
+				3107B3821C53C1280031463D /* libsqlite3.dylib in Resources */,
+				3107B3801C53C1010031463D /* libc++.1.dylib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF6B03D1A7A8CE000A41664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EEC73A21A7B749700504884 /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Modules\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"";
+		};
+		9EEC73A91A7B757600504884 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EF6B0301A7A8CE000A41664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA692461BE51B0C0089E3E5 /* PTChannel.m in Sources */,
+				9EA6922A1BE51B0C0089E3E5 /* literal_cost.cc in Sources */,
+				9EF89F451AB9D0AB004ECEC8 /* JibberAppDelegate.m in Sources */,
+				9EA692431BE51B0C0089E3E5 /* PeerTalkServer.m in Sources */,
+				9EA691FF1BE51B0C0089E3E5 /* huffman.c in Sources */,
+				9EA692271BE51B0C0089E3E5 /* histogram.cc in Sources */,
+				9EA691F91BE51B0C0089E3E5 /* decode.c in Sources */,
+				9EA692041BE51B0C0089E3E5 /* state.c in Sources */,
+				31F71ECF1B895B6A000E1A55 /* CBServer.m in Sources */,
+				9EA691FC1BE51B0C0089E3E5 /* dictionary.c in Sources */,
+				9EA691F31BE51B0C0089E3E5 /* NSData+Brotli.mm in Sources */,
+				9EA692401BE51B0C0089E3E5 /* PeerTalkHelpers.m in Sources */,
+				9E30FA8B1A832CEF009DF0E7 /* module.modulemap in Sources */,
+				9E4F063C1ABD4FC70039C4DF /* JibberConnectionProxy.m in Sources */,
+				9EA692071BE51B0C0089E3E5 /* streams.c in Sources */,
+				9EA692101BE51B0C0089E3E5 /* block_splitter.cc in Sources */,
+				9EA692211BE51B0C0089E3E5 /* entropy_encode.cc in Sources */,
+				9EA691F51BE51B0C0089E3E5 /* bit_reader.c in Sources */,
+				9EA692331BE51B0C0089E3E5 /* static_dict.cc in Sources */,
+				9EA692371BE51B0C0089E3E5 /* streams.cc in Sources */,
+				9EA6920C1BE51B0C0089E3E5 /* backward_references.cc in Sources */,
+				9EA6922D1BE51B0C0089E3E5 /* metablock.cc in Sources */,
+				9EEC73971A7B72F200504884 /* NSURLSession+JibberClient.m in Sources */,
+				9E4F063E1ABD4FC70039C4DF /* JibberSessionProxy.m in Sources */,
+				9EEC73981A7B72F200504884 /* NSURLSessionTask+JibberClient.m in Sources */,
+				9EA6924D1BE51B0C0089E3E5 /* PTUSBHub.m in Sources */,
+				9EA6923D1BE51B0C0089E3E5 /* PeerTalkClient.m in Sources */,
+				9EA6921E1BE51B0C0089E3E5 /* encode_parallel.cc in Sources */,
+				314CB38F1C2AEF04000E2C84 /* NSData+JibberZip.m in Sources */,
+				9EA692131BE51B0C0089E3E5 /* brotli_bit_stream.cc in Sources */,
+				9EEC73941A7B72F200504884 /* JibberClient.m in Sources */,
+				9EA6924A1BE51B0C0089E3E5 /* PTProtocol.m in Sources */,
+				9E4F06421ABD4FD30039C4DF /* NSURLConnection+JibberClient.m in Sources */,
+				9EA6921B1BE51B0C0089E3E5 /* encode.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF6B03B1A7A8CE000A41664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA6923E1BE51B0C0089E3E5 /* PeerTalkClient.m in Sources */,
+				9EA6922B1BE51B0C0089E3E5 /* literal_cost.cc in Sources */,
+				9EA692001BE51B0C0089E3E5 /* huffman.c in Sources */,
+				9EA6922E1BE51B0C0089E3E5 /* metablock.cc in Sources */,
+				9EA692111BE51B0C0089E3E5 /* block_splitter.cc in Sources */,
+				9EA692341BE51B0C0089E3E5 /* static_dict.cc in Sources */,
+				9EA692081BE51B0C0089E3E5 /* streams.c in Sources */,
+				9EA692141BE51B0C0089E3E5 /* brotli_bit_stream.cc in Sources */,
+				9EA692381BE51B0C0089E3E5 /* streams.cc in Sources */,
+				9EA692471BE51B0C0089E3E5 /* PTChannel.m in Sources */,
+				9EA6924E1BE51B0C0089E3E5 /* PTUSBHub.m in Sources */,
+				9EA6921F1BE51B0C0089E3E5 /* encode_parallel.cc in Sources */,
+				9EA692221BE51B0C0089E3E5 /* entropy_encode.cc in Sources */,
+				9EA692441BE51B0C0089E3E5 /* PeerTalkServer.m in Sources */,
+				9EA6920D1BE51B0C0089E3E5 /* backward_references.cc in Sources */,
+				9EA6924B1BE51B0C0089E3E5 /* PTProtocol.m in Sources */,
+				9EA691F61BE51B0C0089E3E5 /* bit_reader.c in Sources */,
+				9EA691FA1BE51B0C0089E3E5 /* decode.c in Sources */,
+				9EA692051BE51B0C0089E3E5 /* state.c in Sources */,
+				9EA692281BE51B0C0089E3E5 /* histogram.cc in Sources */,
+				9EA691F41BE51B0C0089E3E5 /* NSData+Brotli.mm in Sources */,
+				9EA6921C1BE51B0C0089E3E5 /* encode.cc in Sources */,
+				9EA691FD1BE51B0C0089E3E5 /* dictionary.c in Sources */,
+				9EA692411BE51B0C0089E3E5 /* PeerTalkHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EEC73A81A7B754800504884 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EF6B0331A7A8CE000A41664 /* Jibber */;
+			targetProxy = 9EEC73A71A7B754800504884 /* PBXContainerItemProxy */;
+		};
+		9EF6B0421A7A8CE000A41664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EF6B0331A7A8CE000A41664 /* Jibber */;
+			targetProxy = 9EF6B0411A7A8CE000A41664 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9EEC73A51A7B753500504884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9EEC73A61A7B753500504884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9EF6B0461A7A8CE000A41664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9EF6B0471A7A8CE000A41664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EF6B0491A7A8CE000A41664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				MODULEMAP_FILE = module.modulemap;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)/Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		9EF6B04A1A7A8CE000A41664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				MODULEMAP_FILE = module.modulemap;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)/Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		9EF6B04C1A7A8CE000A41664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JibberFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = JibberTests;
+			};
+			name = Debug;
+		};
+		9EF6B04D1A7A8CE000A41664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JibberFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = JibberTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EEC73A41A7B753500504884 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEC73A51A7B753500504884 /* Debug */,
+				9EEC73A61A7B753500504884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EF6B02F1A7A8CE000A41664 /* Build configuration list for PBXProject "Jibber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF6B0461A7A8CE000A41664 /* Debug */,
+				9EF6B0471A7A8CE000A41664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EF6B0481A7A8CE000A41664 /* Build configuration list for PBXNativeTarget "Jibber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF6B0491A7A8CE000A41664 /* Debug */,
+				9EF6B04A1A7A8CE000A41664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EF6B04B1A7A8CE000A41664 /* Build configuration list for PBXNativeTarget "JibberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF6B04C1A7A8CE000A41664 /* Debug */,
+				9EF6B04D1A7A8CE000A41664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EF6B02C1A7A8CE000A41664 /* Project object */;
+}

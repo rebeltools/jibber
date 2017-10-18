@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		314CB38B1C2AEDCE000E2C84 /* NSData+JibberZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 314CB38A1C2AEDCE000E2C84 /* NSData+JibberZip.m */; };
+		31F71EC51B894D5A000E1A55 /* CBServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F71EC41B894D5A000E1A55 /* CBServer.m */; };
+		4504E44578C0F3531D0A55E6 /* libPods-JibberDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F13D62E6E439653B3928504 /* libPods-JibberDemoTests.a */; };
+		9E4F062C1ABD4DE40039C4DF /* JibberAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F061A1ABD4DE40039C4DF /* JibberAppDelegate.m */; };
+		9E4F062D1ABD4DE40039C4DF /* JibberClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F061D1ABD4DE40039C4DF /* JibberClient.m */; };
+		9E4F062E1ABD4DE40039C4DF /* JibberConnectionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F061F1ABD4DE40039C4DF /* JibberConnectionProxy.m */; };
+		9E4F062F1ABD4DE40039C4DF /* JibberSessionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F06211ABD4DE40039C4DF /* JibberSessionProxy.m */; };
+		9E4F06321ABD4DE40039C4DF /* NSURLConnection+JibberClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F06271ABD4DE40039C4DF /* NSURLConnection+JibberClient.m */; };
+		9E4F06331ABD4DE40039C4DF /* NSURLSession+JibberClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F06291ABD4DE40039C4DF /* NSURLSession+JibberClient.m */; };
+		9E4F06341ABD4DE40039C4DF /* NSURLSessionTask+JibberClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F062B1ABD4DE40039C4DF /* NSURLSessionTask+JibberClient.m */; };
+		9E4F06361ABD4E030039C4DF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4F06351ABD4E030039C4DF /* libz.dylib */; };
+		9E52B2071BD46EC200FCB4BC /* NSData+Brotli.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1CD1BD46EC200FCB4BC /* NSData+Brotli.mm */; };
+		9E52B2081BD46EC200FCB4BC /* bit_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1D01BD46EC200FCB4BC /* bit_reader.c */; };
+		9E52B2091BD46EC200FCB4BC /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1D31BD46EC200FCB4BC /* decode.c */; };
+		9E52B20A1BD46EC200FCB4BC /* dictionary.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1D51BD46EC200FCB4BC /* dictionary.c */; };
+		9E52B20B1BD46EC200FCB4BC /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1D71BD46EC200FCB4BC /* huffman.c */; };
+		9E52B20C1BD46EC200FCB4BC /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1DB1BD46EC200FCB4BC /* state.c */; };
+		9E52B20D1BD46EC200FCB4BC /* streams.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1DD1BD46EC200FCB4BC /* streams.c */; };
+		9E52B20E1BD46EC200FCB4BC /* backward_references.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1E21BD46EC200FCB4BC /* backward_references.cc */; };
+		9E52B20F1BD46EC200FCB4BC /* block_splitter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1E51BD46EC200FCB4BC /* block_splitter.cc */; };
+		9E52B2101BD46EC200FCB4BC /* brotli_bit_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1E71BD46EC200FCB4BC /* brotli_bit_stream.cc */; };
+		9E52B2111BD46EC200FCB4BC /* encode.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1EE1BD46EC200FCB4BC /* encode.cc */; };
+		9E52B2121BD46EC200FCB4BC /* encode_parallel.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1F01BD46EC200FCB4BC /* encode_parallel.cc */; };
+		9E52B2131BD46EC200FCB4BC /* entropy_encode.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1F21BD46EC200FCB4BC /* entropy_encode.cc */; };
+		9E52B2141BD46EC200FCB4BC /* histogram.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1F71BD46EC200FCB4BC /* histogram.cc */; };
+		9E52B2151BD46EC200FCB4BC /* literal_cost.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1F91BD46EC200FCB4BC /* literal_cost.cc */; };
+		9E52B2161BD46EC200FCB4BC /* metablock.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B1FB1BD46EC200FCB4BC /* metablock.cc */; };
+		9E52B2171BD46EC200FCB4BC /* static_dict.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B2001BD46EC200FCB4BC /* static_dict.cc */; };
+		9E52B2181BD46EC200FCB4BC /* streams.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B2031BD46EC200FCB4BC /* streams.cc */; };
+		9E52B2281BD46ECB00FCB4BC /* PeerTalkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B21B1BD46ECB00FCB4BC /* PeerTalkClient.m */; };
+		9E52B2291BD46ECB00FCB4BC /* PeerTalkHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B21D1BD46ECB00FCB4BC /* PeerTalkHelpers.m */; };
+		9E52B22A1BD46ECB00FCB4BC /* PeerTalkServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B21F1BD46ECB00FCB4BC /* PeerTalkServer.m */; };
+		9E52B22B1BD46ECB00FCB4BC /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B2221BD46ECB00FCB4BC /* PTChannel.m */; };
+		9E52B22C1BD46ECB00FCB4BC /* PTProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B2251BD46ECB00FCB4BC /* PTProtocol.m */; };
+		9E52B22D1BD46ECB00FCB4BC /* PTUSBHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52B2271BD46ECB00FCB4BC /* PTUSBHub.m */; };
+		9E52B22F1BD4784C00FCB4BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E52B22E1BD4784C00FCB4BC /* Images.xcassets */; };
+		9EB3A8C91ABD4D2E00F7F0B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3A8C81ABD4D2E00F7F0B5 /* main.m */; };
+		9EB3A8CC1ABD4D2E00F7F0B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3A8CB1ABD4D2E00F7F0B5 /* AppDelegate.m */; };
+		9EB3A8D71ABD4D2E00F7F0B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB3A8D51ABD4D2E00F7F0B5 /* LaunchScreen.xib */; };
+		9EB3A8E31ABD4D2E00F7F0B5 /* JibberDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3A8E21ABD4D2E00F7F0B5 /* JibberDemoTests.m */; };
+		9EB3A8F41ABD4D4A00F7F0B5 /* MCConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3A8ED1ABD4D4A00F7F0B5 /* MCConnectionController.m */; };
+		9EB3A8F51ABD4D4A00F7F0B5 /* MCEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3A8EF1ABD4D4A00F7F0B5 /* MCEpisode.m */; };
+		9EB3A8F61ABD4D4A00F7F0B5 /* MCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3A8F11ABD4D4A00F7F0B5 /* MCTableViewController.m */; };
+		9EB3A8F71ABD4D4A00F7F0B5 /* MCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3A8F31ABD4D4A00F7F0B5 /* MCWebViewController.m */; };
+		9EB3A8F91ABD4D6D00F7F0B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB3A8F81ABD4D6D00F7F0B5 /* Main.storyboard */; };
+		BA0AAAE0485BD611B64FC018 /* libPods-JibberDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E048B209A3A837E5EE426D09 /* libPods-JibberDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EB3A8DD1ABD4D2E00F7F0B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB3A8BB1ABD4D2E00F7F0B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EB3A8C21ABD4D2E00F7F0B5;
+			remoteInfo = JibberDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FA67EDEEAEF0E4E378B272 /* Pods-JibberDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibberDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibberDemoTests/Pods-JibberDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		15A266B7CB489C5653FBFDF5 /* Pods-JibberDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibberDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibberDemo/Pods-JibberDemo.release.xcconfig"; sourceTree = "<group>"; };
+		314CB3891C2AEDCE000E2C84 /* NSData+JibberZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JibberZip.h"; sourceTree = "<group>"; };
+		314CB38A1C2AEDCE000E2C84 /* NSData+JibberZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JibberZip.m"; sourceTree = "<group>"; };
+		31F71EC31B894D5A000E1A55 /* CBServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBServer.h; sourceTree = "<group>"; };
+		31F71EC41B894D5A000E1A55 /* CBServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBServer.m; sourceTree = "<group>"; };
+		6F13D62E6E439653B3928504 /* libPods-JibberDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JibberDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E4F06191ABD4DE40039C4DF /* JibberAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberAppDelegate.h; sourceTree = "<group>"; };
+		9E4F061A1ABD4DE40039C4DF /* JibberAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JibberAppDelegate.m; sourceTree = "<group>"; };
+		9E4F061B1ABD4DE40039C4DF /* JibberClient+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JibberClient+Private.h"; sourceTree = "<group>"; };
+		9E4F061C1ABD4DE40039C4DF /* JibberClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberClient.h; sourceTree = "<group>"; };
+		9E4F061D1ABD4DE40039C4DF /* JibberClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JibberClient.m; sourceTree = "<group>"; };
+		9E4F061E1ABD4DE40039C4DF /* JibberConnectionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberConnectionProxy.h; sourceTree = "<group>"; };
+		9E4F061F1ABD4DE40039C4DF /* JibberConnectionProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JibberConnectionProxy.m; sourceTree = "<group>"; };
+		9E4F06201ABD4DE40039C4DF /* JibberSessionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberSessionProxy.h; sourceTree = "<group>"; };
+		9E4F06211ABD4DE40039C4DF /* JibberSessionProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JibberSessionProxy.m; sourceTree = "<group>"; };
+		9E4F06221ABD4DE40039C4DF /* JibberUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JibberUtils.h; sourceTree = "<group>"; };
+		9E4F06261ABD4DE40039C4DF /* NSURLConnection+JibberClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+JibberClient.h"; sourceTree = "<group>"; };
+		9E4F06271ABD4DE40039C4DF /* NSURLConnection+JibberClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+JibberClient.m"; sourceTree = "<group>"; };
+		9E4F06281ABD4DE40039C4DF /* NSURLSession+JibberClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+JibberClient.h"; sourceTree = "<group>"; };
+		9E4F06291ABD4DE40039C4DF /* NSURLSession+JibberClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+JibberClient.m"; sourceTree = "<group>"; };
+		9E4F062A1ABD4DE40039C4DF /* NSURLSessionTask+JibberClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionTask+JibberClient.h"; sourceTree = "<group>"; };
+		9E4F062B1ABD4DE40039C4DF /* NSURLSessionTask+JibberClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionTask+JibberClient.m"; sourceTree = "<group>"; };
+		9E4F06351ABD4E030039C4DF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9E52B1CC1BD46EC200FCB4BC /* NSData+Brotli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Brotli.h"; sourceTree = "<group>"; };
+		9E52B1CD1BD46EC200FCB4BC /* NSData+Brotli.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSData+Brotli.mm"; sourceTree = "<group>"; };
+		9E52B1D01BD46EC200FCB4BC /* bit_reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bit_reader.c; sourceTree = "<group>"; };
+		9E52B1D11BD46EC200FCB4BC /* bit_reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_reader.h; sourceTree = "<group>"; };
+		9E52B1D21BD46EC200FCB4BC /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		9E52B1D31BD46EC200FCB4BC /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode.c; sourceTree = "<group>"; };
+		9E52B1D41BD46EC200FCB4BC /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		9E52B1D51BD46EC200FCB4BC /* dictionary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dictionary.c; sourceTree = "<group>"; };
+		9E52B1D61BD46EC200FCB4BC /* dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		9E52B1D71BD46EC200FCB4BC /* huffman.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = huffman.c; sourceTree = "<group>"; };
+		9E52B1D81BD46EC200FCB4BC /* huffman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huffman.h; sourceTree = "<group>"; };
+		9E52B1D91BD46EC200FCB4BC /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = port.h; sourceTree = "<group>"; };
+		9E52B1DA1BD46EC200FCB4BC /* prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.h; sourceTree = "<group>"; };
+		9E52B1DB1BD46EC200FCB4BC /* state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = state.c; sourceTree = "<group>"; };
+		9E52B1DC1BD46EC200FCB4BC /* state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		9E52B1DD1BD46EC200FCB4BC /* streams.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = streams.c; sourceTree = "<group>"; };
+		9E52B1DE1BD46EC200FCB4BC /* streams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streams.h; sourceTree = "<group>"; };
+		9E52B1DF1BD46EC200FCB4BC /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transform.h; sourceTree = "<group>"; };
+		9E52B1E01BD46EC200FCB4BC /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		9E52B1E21BD46EC200FCB4BC /* backward_references.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = backward_references.cc; sourceTree = "<group>"; };
+		9E52B1E31BD46EC200FCB4BC /* backward_references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backward_references.h; sourceTree = "<group>"; };
+		9E52B1E41BD46EC200FCB4BC /* bit_cost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bit_cost.h; sourceTree = "<group>"; };
+		9E52B1E51BD46EC200FCB4BC /* block_splitter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = block_splitter.cc; sourceTree = "<group>"; };
+		9E52B1E61BD46EC200FCB4BC /* block_splitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block_splitter.h; sourceTree = "<group>"; };
+		9E52B1E71BD46EC200FCB4BC /* brotli_bit_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = brotli_bit_stream.cc; sourceTree = "<group>"; };
+		9E52B1E81BD46EC200FCB4BC /* brotli_bit_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brotli_bit_stream.h; sourceTree = "<group>"; };
+		9E52B1E91BD46EC200FCB4BC /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cluster.h; sourceTree = "<group>"; };
+		9E52B1EA1BD46EC200FCB4BC /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
+		9E52B1EB1BD46EC200FCB4BC /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		9E52B1EC1BD46EC200FCB4BC /* dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		9E52B1ED1BD46EC200FCB4BC /* dictionary_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictionary_hash.h; sourceTree = "<group>"; };
+		9E52B1EE1BD46EC200FCB4BC /* encode.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encode.cc; sourceTree = "<group>"; };
+		9E52B1EF1BD46EC200FCB4BC /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		9E52B1F01BD46EC200FCB4BC /* encode_parallel.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encode_parallel.cc; sourceTree = "<group>"; };
+		9E52B1F11BD46EC200FCB4BC /* encode_parallel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode_parallel.h; sourceTree = "<group>"; };
+		9E52B1F21BD46EC200FCB4BC /* entropy_encode.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = entropy_encode.cc; sourceTree = "<group>"; };
+		9E52B1F31BD46EC200FCB4BC /* entropy_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy_encode.h; sourceTree = "<group>"; };
+		9E52B1F41BD46EC200FCB4BC /* fast_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fast_log.h; sourceTree = "<group>"; };
+		9E52B1F51BD46EC200FCB4BC /* find_match_length.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = find_match_length.h; sourceTree = "<group>"; };
+		9E52B1F61BD46EC200FCB4BC /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		9E52B1F71BD46EC200FCB4BC /* histogram.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = histogram.cc; sourceTree = "<group>"; };
+		9E52B1F81BD46EC200FCB4BC /* histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histogram.h; sourceTree = "<group>"; };
+		9E52B1F91BD46EC200FCB4BC /* literal_cost.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = literal_cost.cc; sourceTree = "<group>"; };
+		9E52B1FA1BD46EC200FCB4BC /* literal_cost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = literal_cost.h; sourceTree = "<group>"; };
+		9E52B1FB1BD46EC200FCB4BC /* metablock.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = metablock.cc; sourceTree = "<group>"; };
+		9E52B1FC1BD46EC200FCB4BC /* metablock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metablock.h; sourceTree = "<group>"; };
+		9E52B1FD1BD46EC200FCB4BC /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = port.h; sourceTree = "<group>"; };
+		9E52B1FE1BD46EC200FCB4BC /* prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.h; sourceTree = "<group>"; };
+		9E52B1FF1BD46EC200FCB4BC /* ringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ringbuffer.h; sourceTree = "<group>"; };
+		9E52B2001BD46EC200FCB4BC /* static_dict.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = static_dict.cc; sourceTree = "<group>"; };
+		9E52B2011BD46EC200FCB4BC /* static_dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = static_dict.h; sourceTree = "<group>"; };
+		9E52B2021BD46EC200FCB4BC /* static_dict_lut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = static_dict_lut.h; sourceTree = "<group>"; };
+		9E52B2031BD46EC200FCB4BC /* streams.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = streams.cc; sourceTree = "<group>"; };
+		9E52B2041BD46EC200FCB4BC /* streams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streams.h; sourceTree = "<group>"; };
+		9E52B2051BD46EC200FCB4BC /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transform.h; sourceTree = "<group>"; };
+		9E52B2061BD46EC200FCB4BC /* write_bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = write_bits.h; sourceTree = "<group>"; };
+		9E52B21A1BD46ECB00FCB4BC /* PeerTalkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerTalkClient.h; sourceTree = "<group>"; };
+		9E52B21B1BD46ECB00FCB4BC /* PeerTalkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerTalkClient.m; sourceTree = "<group>"; };
+		9E52B21C1BD46ECB00FCB4BC /* PeerTalkHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerTalkHelpers.h; sourceTree = "<group>"; };
+		9E52B21D1BD46ECB00FCB4BC /* PeerTalkHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerTalkHelpers.m; sourceTree = "<group>"; };
+		9E52B21E1BD46ECB00FCB4BC /* PeerTalkServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerTalkServer.h; sourceTree = "<group>"; };
+		9E52B21F1BD46ECB00FCB4BC /* PeerTalkServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerTalkServer.m; sourceTree = "<group>"; };
+		9E52B2211BD46ECB00FCB4BC /* PTChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTChannel.h; sourceTree = "<group>"; };
+		9E52B2221BD46ECB00FCB4BC /* PTChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTChannel.m; sourceTree = "<group>"; };
+		9E52B2231BD46ECB00FCB4BC /* PTPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPrivate.h; sourceTree = "<group>"; };
+		9E52B2241BD46ECB00FCB4BC /* PTProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTProtocol.h; sourceTree = "<group>"; };
+		9E52B2251BD46ECB00FCB4BC /* PTProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTProtocol.m; sourceTree = "<group>"; };
+		9E52B2261BD46ECB00FCB4BC /* PTUSBHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUSBHub.h; sourceTree = "<group>"; };
+		9E52B2271BD46ECB00FCB4BC /* PTUSBHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUSBHub.m; sourceTree = "<group>"; };
+		9E52B22E1BD4784C00FCB4BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9EB3A8C31ABD4D2E00F7F0B5 /* JibberDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JibberDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB3A8C71ABD4D2E00F7F0B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB3A8C81ABD4D2E00F7F0B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EB3A8CA1ABD4D2E00F7F0B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9EB3A8CB1ABD4D2E00F7F0B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9EB3A8D61ABD4D2E00F7F0B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9EB3A8DC1ABD4D2E00F7F0B5 /* JibberDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JibberDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB3A8E11ABD4D2E00F7F0B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB3A8E21ABD4D2E00F7F0B5 /* JibberDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JibberDemoTests.m; sourceTree = "<group>"; };
+		9EB3A8EC1ABD4D4A00F7F0B5 /* MCConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCConnectionController.h; sourceTree = "<group>"; };
+		9EB3A8ED1ABD4D4A00F7F0B5 /* MCConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCConnectionController.m; sourceTree = "<group>"; };
+		9EB3A8EE1ABD4D4A00F7F0B5 /* MCEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCEpisode.h; sourceTree = "<group>"; };
+		9EB3A8EF1ABD4D4A00F7F0B5 /* MCEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCEpisode.m; sourceTree = "<group>"; };
+		9EB3A8F01ABD4D4A00F7F0B5 /* MCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTableViewController.h; sourceTree = "<group>"; };
+		9EB3A8F11ABD4D4A00F7F0B5 /* MCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTableViewController.m; sourceTree = "<group>"; };
+		9EB3A8F21ABD4D4A00F7F0B5 /* MCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCWebViewController.h; sourceTree = "<group>"; };
+		9EB3A8F31ABD4D4A00F7F0B5 /* MCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCWebViewController.m; sourceTree = "<group>"; };
+		9EB3A8F81ABD4D6D00F7F0B5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B0217B2913F2B206364E05DE /* Pods-JibberDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibberDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibberDemo/Pods-JibberDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E048B209A3A837E5EE426D09 /* libPods-JibberDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JibberDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6B016CD3E0A56BFCC12BAF /* Pods-JibberDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibberDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibberDemoTests/Pods-JibberDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EB3A8C01ABD4D2E00F7F0B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4F06361ABD4E030039C4DF /* libz.dylib in Frameworks */,
+				BA0AAAE0485BD611B64FC018 /* libPods-JibberDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB3A8D91ABD4D2E00F7F0B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4504E44578C0F3531D0A55E6 /* libPods-JibberDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98DC32B1CD4138A3A0CE9C8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0217B2913F2B206364E05DE /* Pods-JibberDemo.debug.xcconfig */,
+				15A266B7CB489C5653FBFDF5 /* Pods-JibberDemo.release.xcconfig */,
+				FD6B016CD3E0A56BFCC12BAF /* Pods-JibberDemoTests.debug.xcconfig */,
+				00FA67EDEEAEF0E4E378B272 /* Pods-JibberDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E4F06181ABD4DE40039C4DF /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				9E52B2191BD46ECB00FCB4BC /* PeerTalk */,
+				9E52B1CB1BD46EC200FCB4BC /* Brotli */,
+				9E4F06191ABD4DE40039C4DF /* JibberAppDelegate.h */,
+				9E4F061A1ABD4DE40039C4DF /* JibberAppDelegate.m */,
+				9E4F061B1ABD4DE40039C4DF /* JibberClient+Private.h */,
+				9E4F061C1ABD4DE40039C4DF /* JibberClient.h */,
+				9E4F061D1ABD4DE40039C4DF /* JibberClient.m */,
+				9E4F061E1ABD4DE40039C4DF /* JibberConnectionProxy.h */,
+				9E4F061F1ABD4DE40039C4DF /* JibberConnectionProxy.m */,
+				9E4F06201ABD4DE40039C4DF /* JibberSessionProxy.h */,
+				9E4F06211ABD4DE40039C4DF /* JibberSessionProxy.m */,
+				9E4F06221ABD4DE40039C4DF /* JibberUtils.h */,
+				9E4F06261ABD4DE40039C4DF /* NSURLConnection+JibberClient.h */,
+				9E4F06271ABD4DE40039C4DF /* NSURLConnection+JibberClient.m */,
+				9E4F06281ABD4DE40039C4DF /* NSURLSession+JibberClient.h */,
+				9E4F06291ABD4DE40039C4DF /* NSURLSession+JibberClient.m */,
+				9E4F062A1ABD4DE40039C4DF /* NSURLSessionTask+JibberClient.h */,
+				9E4F062B1ABD4DE40039C4DF /* NSURLSessionTask+JibberClient.m */,
+				31F71EC31B894D5A000E1A55 /* CBServer.h */,
+				31F71EC41B894D5A000E1A55 /* CBServer.m */,
+				314CB3891C2AEDCE000E2C84 /* NSData+JibberZip.h */,
+				314CB38A1C2AEDCE000E2C84 /* NSData+JibberZip.m */,
+			);
+			name = framework;
+			path = ../../framework;
+			sourceTree = "<group>";
+		};
+		9E52B1CB1BD46EC200FCB4BC /* Brotli */ = {
+			isa = PBXGroup;
+			children = (
+				9E52B1CC1BD46EC200FCB4BC /* NSData+Brotli.h */,
+				9E52B1CD1BD46EC200FCB4BC /* NSData+Brotli.mm */,
+				9E52B1CE1BD46EC200FCB4BC /* source */,
+			);
+			path = Brotli;
+			sourceTree = "<group>";
+		};
+		9E52B1CE1BD46EC200FCB4BC /* source */ = {
+			isa = PBXGroup;
+			children = (
+				9E52B1CF1BD46EC200FCB4BC /* dec */,
+				9E52B1E11BD46EC200FCB4BC /* enc */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		9E52B1CF1BD46EC200FCB4BC /* dec */ = {
+			isa = PBXGroup;
+			children = (
+				9E52B1D01BD46EC200FCB4BC /* bit_reader.c */,
+				9E52B1D11BD46EC200FCB4BC /* bit_reader.h */,
+				9E52B1D21BD46EC200FCB4BC /* context.h */,
+				9E52B1D31BD46EC200FCB4BC /* decode.c */,
+				9E52B1D41BD46EC200FCB4BC /* decode.h */,
+				9E52B1D51BD46EC200FCB4BC /* dictionary.c */,
+				9E52B1D61BD46EC200FCB4BC /* dictionary.h */,
+				9E52B1D71BD46EC200FCB4BC /* huffman.c */,
+				9E52B1D81BD46EC200FCB4BC /* huffman.h */,
+				9E52B1D91BD46EC200FCB4BC /* port.h */,
+				9E52B1DA1BD46EC200FCB4BC /* prefix.h */,
+				9E52B1DB1BD46EC200FCB4BC /* state.c */,
+				9E52B1DC1BD46EC200FCB4BC /* state.h */,
+				9E52B1DD1BD46EC200FCB4BC /* streams.c */,
+				9E52B1DE1BD46EC200FCB4BC /* streams.h */,
+				9E52B1DF1BD46EC200FCB4BC /* transform.h */,
+				9E52B1E01BD46EC200FCB4BC /* types.h */,
+			);
+			path = dec;
+			sourceTree = "<group>";
+		};
+		9E52B1E11BD46EC200FCB4BC /* enc */ = {
+			isa = PBXGroup;
+			children = (
+				9E52B1E21BD46EC200FCB4BC /* backward_references.cc */,
+				9E52B1E31BD46EC200FCB4BC /* backward_references.h */,
+				9E52B1E41BD46EC200FCB4BC /* bit_cost.h */,
+				9E52B1E51BD46EC200FCB4BC /* block_splitter.cc */,
+				9E52B1E61BD46EC200FCB4BC /* block_splitter.h */,
+				9E52B1E71BD46EC200FCB4BC /* brotli_bit_stream.cc */,
+				9E52B1E81BD46EC200FCB4BC /* brotli_bit_stream.h */,
+				9E52B1E91BD46EC200FCB4BC /* cluster.h */,
+				9E52B1EA1BD46EC200FCB4BC /* command.h */,
+				9E52B1EB1BD46EC200FCB4BC /* context.h */,
+				9E52B1EC1BD46EC200FCB4BC /* dictionary.h */,
+				9E52B1ED1BD46EC200FCB4BC /* dictionary_hash.h */,
+				9E52B1EE1BD46EC200FCB4BC /* encode.cc */,
+				9E52B1EF1BD46EC200FCB4BC /* encode.h */,
+				9E52B1F01BD46EC200FCB4BC /* encode_parallel.cc */,
+				9E52B1F11BD46EC200FCB4BC /* encode_parallel.h */,
+				9E52B1F21BD46EC200FCB4BC /* entropy_encode.cc */,
+				9E52B1F31BD46EC200FCB4BC /* entropy_encode.h */,
+				9E52B1F41BD46EC200FCB4BC /* fast_log.h */,
+				9E52B1F51BD46EC200FCB4BC /* find_match_length.h */,
+				9E52B1F61BD46EC200FCB4BC /* hash.h */,
+				9E52B1F71BD46EC200FCB4BC /* histogram.cc */,
+				9E52B1F81BD46EC200FCB4BC /* histogram.h */,
+				9E52B1F91BD46EC200FCB4BC /* literal_cost.cc */,
+				9E52B1FA1BD46EC200FCB4BC /* literal_cost.h */,
+				9E52B1FB1BD46EC200FCB4BC /* metablock.cc */,
+				9E52B1FC1BD46EC200FCB4BC /* metablock.h */,
+				9E52B1FD1BD46EC200FCB4BC /* port.h */,
+				9E52B1FE1BD46EC200FCB4BC /* prefix.h */,
+				9E52B1FF1BD46EC200FCB4BC /* ringbuffer.h */,
+				9E52B2001BD46EC200FCB4BC /* static_dict.cc */,
+				9E52B2011BD46EC200FCB4BC /* static_dict.h */,
+				9E52B2021BD46EC200FCB4BC /* static_dict_lut.h */,
+				9E52B2031BD46EC200FCB4BC /* streams.cc */,
+				9E52B2041BD46EC200FCB4BC /* streams.h */,
+				9E52B2051BD46EC200FCB4BC /* transform.h */,
+				9E52B2061BD46EC200FCB4BC /* write_bits.h */,
+			);
+			path = enc;
+			sourceTree = "<group>";
+		};
+		9E52B2191BD46ECB00FCB4BC /* PeerTalk */ = {
+			isa = PBXGroup;
+			children = (
+				9E52B21A1BD46ECB00FCB4BC /* PeerTalkClient.h */,
+				9E52B21B1BD46ECB00FCB4BC /* PeerTalkClient.m */,
+				9E52B21C1BD46ECB00FCB4BC /* PeerTalkHelpers.h */,
+				9E52B21D1BD46ECB00FCB4BC /* PeerTalkHelpers.m */,
+				9E52B21E1BD46ECB00FCB4BC /* PeerTalkServer.h */,
+				9E52B21F1BD46ECB00FCB4BC /* PeerTalkServer.m */,
+				9E52B2201BD46ECB00FCB4BC /* source */,
+			);
+			path = PeerTalk;
+			sourceTree = "<group>";
+		};
+		9E52B2201BD46ECB00FCB4BC /* source */ = {
+			isa = PBXGroup;
+			children = (
+				9E52B2211BD46ECB00FCB4BC /* PTChannel.h */,
+				9E52B2221BD46ECB00FCB4BC /* PTChannel.m */,
+				9E52B2231BD46ECB00FCB4BC /* PTPrivate.h */,
+				9E52B2241BD46ECB00FCB4BC /* PTProtocol.h */,
+				9E52B2251BD46ECB00FCB4BC /* PTProtocol.m */,
+				9E52B2261BD46ECB00FCB4BC /* PTUSBHub.h */,
+				9E52B2271BD46ECB00FCB4BC /* PTUSBHub.m */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		9EB3A8BA1ABD4D2E00F7F0B5 = {
+			isa = PBXGroup;
+			children = (
+				9EB3A8C51ABD4D2E00F7F0B5 /* JibberDemo */,
+				9EB3A8DF1ABD4D2E00F7F0B5 /* JibberDemoTests */,
+				9EB3A8C41ABD4D2E00F7F0B5 /* Products */,
+				C3D020E84D342AD103F2FDA1 /* Frameworks */,
+				98DC32B1CD4138A3A0CE9C8F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9EB3A8C41ABD4D2E00F7F0B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3A8C31ABD4D2E00F7F0B5 /* JibberDemo.app */,
+				9EB3A8DC1ABD4D2E00F7F0B5 /* JibberDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EB3A8C51ABD4D2E00F7F0B5 /* JibberDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9E4F06181ABD4DE40039C4DF /* framework */,
+				9EB3A8EC1ABD4D4A00F7F0B5 /* MCConnectionController.h */,
+				9EB3A8ED1ABD4D4A00F7F0B5 /* MCConnectionController.m */,
+				9EB3A8EE1ABD4D4A00F7F0B5 /* MCEpisode.h */,
+				9EB3A8EF1ABD4D4A00F7F0B5 /* MCEpisode.m */,
+				9EB3A8F01ABD4D4A00F7F0B5 /* MCTableViewController.h */,
+				9EB3A8F11ABD4D4A00F7F0B5 /* MCTableViewController.m */,
+				9EB3A8F21ABD4D4A00F7F0B5 /* MCWebViewController.h */,
+				9EB3A8F31ABD4D4A00F7F0B5 /* MCWebViewController.m */,
+				9EB3A8CA1ABD4D2E00F7F0B5 /* AppDelegate.h */,
+				9EB3A8CB1ABD4D2E00F7F0B5 /* AppDelegate.m */,
+				9EB3A8F81ABD4D6D00F7F0B5 /* Main.storyboard */,
+				9EB3A8D51ABD4D2E00F7F0B5 /* LaunchScreen.xib */,
+				9E52B22E1BD4784C00FCB4BC /* Images.xcassets */,
+				9EB3A8C61ABD4D2E00F7F0B5 /* Supporting Files */,
+			);
+			path = JibberDemo;
+			sourceTree = "<group>";
+		};
+		9EB3A8C61ABD4D2E00F7F0B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3A8C71ABD4D2E00F7F0B5 /* Info.plist */,
+				9EB3A8C81ABD4D2E00F7F0B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EB3A8DF1ABD4D2E00F7F0B5 /* JibberDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3A8E21ABD4D2E00F7F0B5 /* JibberDemoTests.m */,
+				9EB3A8E01ABD4D2E00F7F0B5 /* Supporting Files */,
+			);
+			path = JibberDemoTests;
+			sourceTree = "<group>";
+		};
+		9EB3A8E01ABD4D2E00F7F0B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB3A8E11ABD4D2E00F7F0B5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3D020E84D342AD103F2FDA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E4F06351ABD4E030039C4DF /* libz.dylib */,
+				E048B209A3A837E5EE426D09 /* libPods-JibberDemo.a */,
+				6F13D62E6E439653B3928504 /* libPods-JibberDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EB3A8C21ABD4D2E00F7F0B5 /* JibberDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB3A8E61ABD4D2E00F7F0B5 /* Build configuration list for PBXNativeTarget "JibberDemo" */;
+			buildPhases = (
+				EA562F0909A5888BC4CE488A /* [CP] Check Pods Manifest.lock */,
+				9EB3A8BF1ABD4D2E00F7F0B5 /* Sources */,
+				9EB3A8C01ABD4D2E00F7F0B5 /* Frameworks */,
+				9EB3A8C11ABD4D2E00F7F0B5 /* Resources */,
+				57CEE1382EBB58B4C8FDA179 /* [CP] Embed Pods Frameworks */,
+				8DFD51B9416171FAA0690CB5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JibberDemo;
+			productName = JibberDemo;
+			productReference = 9EB3A8C31ABD4D2E00F7F0B5 /* JibberDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EB3A8DB1ABD4D2E00F7F0B5 /* JibberDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB3A8E91ABD4D2E00F7F0B5 /* Build configuration list for PBXNativeTarget "JibberDemoTests" */;
+			buildPhases = (
+				F41F850797AAE2E18DB9F0D2 /* [CP] Check Pods Manifest.lock */,
+				9EB3A8D81ABD4D2E00F7F0B5 /* Sources */,
+				9EB3A8D91ABD4D2E00F7F0B5 /* Frameworks */,
+				9EB3A8DA1ABD4D2E00F7F0B5 /* Resources */,
+				46A77B98B2B464C371D09DA0 /* [CP] Embed Pods Frameworks */,
+				E07175CC65B39E9314353BB0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EB3A8DE1ABD4D2E00F7F0B5 /* PBXTargetDependency */,
+			);
+			name = JibberDemoTests;
+			productName = JibberDemoTests;
+			productReference = 9EB3A8DC1ABD4D2E00F7F0B5 /* JibberDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EB3A8BB1ABD4D2E00F7F0B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Matthew Cheok";
+				TargetAttributes = {
+					9EB3A8C21ABD4D2E00F7F0B5 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = EHW7L3679R;
+					};
+					9EB3A8DB1ABD4D2E00F7F0B5 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 9EB3A8C21ABD4D2E00F7F0B5;
+					};
+				};
+			};
+			buildConfigurationList = 9EB3A8BE1ABD4D2E00F7F0B5 /* Build configuration list for PBXProject "JibberDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EB3A8BA1ABD4D2E00F7F0B5;
+			productRefGroup = 9EB3A8C41ABD4D2E00F7F0B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EB3A8C21ABD4D2E00F7F0B5 /* JibberDemo */,
+				9EB3A8DB1ABD4D2E00F7F0B5 /* JibberDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EB3A8C11ABD4D2E00F7F0B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E52B22F1BD4784C00FCB4BC /* Images.xcassets in Resources */,
+				9EB3A8D71ABD4D2E00F7F0B5 /* LaunchScreen.xib in Resources */,
+				9EB3A8F91ABD4D6D00F7F0B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB3A8DA1ABD4D2E00F7F0B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46A77B98B2B464C371D09DA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JibberDemoTests/Pods-JibberDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57CEE1382EBB58B4C8FDA179 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JibberDemo/Pods-JibberDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DFD51B9416171FAA0690CB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JibberDemo/Pods-JibberDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E07175CC65B39E9314353BB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JibberDemoTests/Pods-JibberDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA562F0909A5888BC4CE488A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F41F850797AAE2E18DB9F0D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EB3A8BF1ABD4D2E00F7F0B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E52B2151BD46EC200FCB4BC /* literal_cost.cc in Sources */,
+				314CB38B1C2AEDCE000E2C84 /* NSData+JibberZip.m in Sources */,
+				9E52B20C1BD46EC200FCB4BC /* state.c in Sources */,
+				9E52B2111BD46EC200FCB4BC /* encode.cc in Sources */,
+				9E4F062E1ABD4DE40039C4DF /* JibberConnectionProxy.m in Sources */,
+				9E52B2291BD46ECB00FCB4BC /* PeerTalkHelpers.m in Sources */,
+				31F71EC51B894D5A000E1A55 /* CBServer.m in Sources */,
+				9EB3A8F51ABD4D4A00F7F0B5 /* MCEpisode.m in Sources */,
+				9EB3A8CC1ABD4D2E00F7F0B5 /* AppDelegate.m in Sources */,
+				9E52B22B1BD46ECB00FCB4BC /* PTChannel.m in Sources */,
+				9E4F06341ABD4DE40039C4DF /* NSURLSessionTask+JibberClient.m in Sources */,
+				9EB3A8F71ABD4D4A00F7F0B5 /* MCWebViewController.m in Sources */,
+				9E52B22C1BD46ECB00FCB4BC /* PTProtocol.m in Sources */,
+				9E4F06321ABD4DE40039C4DF /* NSURLConnection+JibberClient.m in Sources */,
+				9E52B2281BD46ECB00FCB4BC /* PeerTalkClient.m in Sources */,
+				9E52B2101BD46EC200FCB4BC /* brotli_bit_stream.cc in Sources */,
+				9E52B2141BD46EC200FCB4BC /* histogram.cc in Sources */,
+				9E52B2171BD46EC200FCB4BC /* static_dict.cc in Sources */,
+				9EB3A8F61ABD4D4A00F7F0B5 /* MCTableViewController.m in Sources */,
+				9E4F06331ABD4DE40039C4DF /* NSURLSession+JibberClient.m in Sources */,
+				9E52B2071BD46EC200FCB4BC /* NSData+Brotli.mm in Sources */,
+				9E52B20A1BD46EC200FCB4BC /* dictionary.c in Sources */,
+				9E52B22D1BD46ECB00FCB4BC /* PTUSBHub.m in Sources */,
+				9E52B2131BD46EC200FCB4BC /* entropy_encode.cc in Sources */,
+				9E52B2181BD46EC200FCB4BC /* streams.cc in Sources */,
+				9E4F062C1ABD4DE40039C4DF /* JibberAppDelegate.m in Sources */,
+				9EB3A8C91ABD4D2E00F7F0B5 /* main.m in Sources */,
+				9E52B2091BD46EC200FCB4BC /* decode.c in Sources */,
+				9E52B20B1BD46EC200FCB4BC /* huffman.c in Sources */,
+				9E52B22A1BD46ECB00FCB4BC /* PeerTalkServer.m in Sources */,
+				9E52B2161BD46EC200FCB4BC /* metablock.cc in Sources */,
+				9E52B2081BD46EC200FCB4BC /* bit_reader.c in Sources */,
+				9E4F062D1ABD4DE40039C4DF /* JibberClient.m in Sources */,
+				9E52B20E1BD46EC200FCB4BC /* backward_references.cc in Sources */,
+				9EB3A8F41ABD4D4A00F7F0B5 /* MCConnectionController.m in Sources */,
+				9E4F062F1ABD4DE40039C4DF /* JibberSessionProxy.m in Sources */,
+				9E52B20F1BD46EC200FCB4BC /* block_splitter.cc in Sources */,
+				9E52B2121BD46EC200FCB4BC /* encode_parallel.cc in Sources */,
+				9E52B20D1BD46EC200FCB4BC /* streams.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB3A8D81ABD4D2E00F7F0B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB3A8E31ABD4D2E00F7F0B5 /* JibberDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EB3A8DE1ABD4D2E00F7F0B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EB3A8C21ABD4D2E00F7F0B5 /* JibberDemo */;
+			targetProxy = 9EB3A8DD1ABD4D2E00F7F0B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EB3A8D51ABD4D2E00F7F0B5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EB3A8D61ABD4D2E00F7F0B5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EB3A8E41ABD4D2E00F7F0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9EB3A8E51ABD4D2E00F7F0B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EB3A8E71ABD4D2E00F7F0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0217B2913F2B206364E05DE /* Pods-JibberDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JibberDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9EB3A8E81ABD4D2E00F7F0B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A266B7CB489C5653FBFDF5 /* Pods-JibberDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JibberDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9EB3A8EA1ABD4D2E00F7F0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD6B016CD3E0A56BFCC12BAF /* Pods-JibberDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JibberDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JibberDemo.app/JibberDemo";
+			};
+			name = Debug;
+		};
+		9EB3A8EB1ABD4D2E00F7F0B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FA67EDEEAEF0E4E378B272 /* Pods-JibberDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JibberDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JibberDemo.app/JibberDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EB3A8BE1ABD4D2E00F7F0B5 /* Build configuration list for PBXProject "JibberDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB3A8E41ABD4D2E00F7F0B5 /* Debug */,
+				9EB3A8E51ABD4D2E00F7F0B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB3A8E61ABD4D2E00F7F0B5 /* Build configuration list for PBXNativeTarget "JibberDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB3A8E71ABD4D2E00F7F0B5 /* Debug */,
+				9EB3A8E81ABD4D2E00F7F0B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB3A8E91ABD4D2E00F7F0B5 /* Build configuration list for PBXNativeTarget "JibberDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB3A8EA1ABD4D2E00F7F0B5 /* Debug */,
+				9EB3A8EB1ABD4D2E00F7F0B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EB3A8BB1ABD4D2E00F7F0B5 /* Project object */;
+}
